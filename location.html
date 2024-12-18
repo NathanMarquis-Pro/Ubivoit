@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="asset/css/load.css">
+        <link rel="stylesheet" href="asset/css/location.css">
+        <link rel="stylesheet" href="asset/css/navBar.css">
+        <link rel="stylesheet" href="asset/css/policeEcriture.css">
+        <title>Ubivoit</title>
+
+        <link rel="icon" href="asset/img/Ubisoft.ico">
+
+    </head>
+    <body>
+        <div class="pageChargement">
+            <div class="containLogo"><img src="asset/img/Ubisoft.png"></div>
+            <div class="containLoad"><div class="load"></div></div>
+        </div>
+        <header>
+                <ul id="nav">
+                    <li><img src="asset/img/image 7.png"></li>
+                    <li><a href="index.html" >Information</a></li>
+                    <li><a href="location.html" id="selected"class="textNav">Location et prêt</a></li>
+                    <li><a href="contact.html" class="textNav">Nous contacter</a></li>
+                    <li><a href="login.html" class="profilButton"><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+
+            <details>
+                <summary><img src="asset/img/image 7.png"><a href="login.html" class="profilButton"><i class="fa-regular fa-user"></i></a></summary>
+                <ul>
+                    <li><a href="#" >Information</a></li>
+                    <li><a href="#" id="selected" class="textNav">Location et prêt</a></li>
+                    <li><a href="#" class="textNav">Nous contacter</a></li>
+                </ul>
+            </details>
+        </header>
+        <main>
+            <section id="section-location-pret" class="whiteBg">
+                <h2>Location et prêt</h2>
+                <div class="container">
+                    <div>
+                        <img src="asset/img/Trotinette_Velo.png.webp" alt="image location et prêt">
+                    </div>
+                    <div>
+                        <form method="post" action="success.html" class="blackBg">
+                            <div>
+                                <input type="text" placeholder="Nom et prénom">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Adresse mail">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Adresse complète">
+                            </div>
+                            <div class="whiteBg containListe">
+                                <p>Cochez une case</p>
+                                <div>
+                                    <input type="radio" name="liste-location" id="voiture">
+                                    <label for="voiture">Voiture électrique</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-location" id="trottinette">
+                                    <label for="trottinette">Trottinette électrique</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-location" id="velo">
+                                    <label for="velo">Vélo électrique</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Envoyer" class="whiteBg">
+                        </form>
+                    </div>
+                </div>
+                <p>Après avoir complété le formulaire, vous serez recontacté pour bénéficier de votre service</p>
+            </section>
+
+            <section id="section-covoiturage" class="blackBg" style="height: 100%;">
+                <h2>Covoiturage</h2>
+                <div class="container">
+                    <div>
+                        <form method="post" action="success.html" class="whiteBg">
+                            <div>
+                                <input type="text" placeholder="Nom et prénom" class="blackBg">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Adresse mail" class="blackBg">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Adresse complète" class="blackBg">
+                            </div>
+                            <div class="blackBg containListe">
+                                <p>Cochez un case</p>
+                                <div>
+                                    <input type="radio" name="liste-covoiturage" id="conducteur">
+                                    <label for="conducteur">Conducteur</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-covoiturage" id="passager">
+                                    <label for="passager">Recherche conducteur</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Envoyer" class="blackBg">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="asset/img/Logo_Covoiturage1.png.webp" alt="image de Covoiturage" class="borderWhite">
+                    </div>
+                </div>
+                <p>Après avoir complété le formulaire, vous serez recontacté pour plus d’informations et vous serez mis en relation avec un collègue</p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://ubisoft.com/"><img src="asset/img/Ubisoft.png" alt="Ubisoft logo"></a>
+            <p>Ubivoit ©, Thomas Chaumette, Lorenzo Flagothier , Nathan Marquis</p>
+            <p class="condition"><a href="https://legal.ubi.com/termsofuse/fr-FR">Conditions générales</a></p>
+        </footer>
+
+        
+    </body>
+</html>
